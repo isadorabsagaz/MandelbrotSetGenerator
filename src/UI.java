@@ -32,6 +32,13 @@ public class UI extends JPanel {
                zoom(e.getX(), e.getY(), scale);
            }
        });
+       addMouseMotionListener(new MouseAdapter() {
+           @Override
+           public void mouseDragged(MouseEvent e) {
+              zoom(e.getX(), e.getY(), 1);
+           }
+       });
+
        generateFractal();
    }
 
