@@ -7,6 +7,7 @@ public class Main {
         UI panel = new UI();
         frame.add(panel);
         frame.pack();
+        frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
     }
